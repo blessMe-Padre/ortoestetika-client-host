@@ -76,26 +76,26 @@ window.addEventListener('DOMContentLoaded', () => {
     //         });
     //     });
     // }
-    const beautyItemsRadio = document.querySelectorAll('.beauty-item-radio');
-    if (beautyItemsRadio) {
-        beautyItemsRadio.forEach((item) => {
-            const input = item.querySelector('input');
-            if (input.checked) {
-                item.querySelector('span').classList.add('is-checked');
-            } else {
-                item.querySelector('span').classList.remove('is-checked');
-            }
+    // const beautyItemsRadio = document.querySelectorAll('.beauty-item-radio');
+    // if (beautyItemsRadio) {
+    //     beautyItemsRadio.forEach((item) => {
+    //         const input = item.querySelector('input');
+    //         if (input.checked) {
+    //             item.querySelector('span').classList.add('is-checked');
+    //         } else {
+    //             item.querySelector('span').classList.remove('is-checked');
+    //         }
 
-            input.addEventListener('change', () => {
-                // удаляет is-checked у остальных item
-                beautyItemsRadio.forEach((item) => {
-                    item.querySelector('span').classList.remove('is-checked');
-                });
-                // добавляет is-checked к текущему item
-                item.querySelector('span').classList.add('is-checked');
-            });
-        });
-    }
+    //         input.addEventListener('change', () => {
+    //             // удаляет is-checked у остальных item
+    //             beautyItemsRadio.forEach((item) => {
+    //                 item.querySelector('span').classList.remove('is-checked');
+    //             });
+    //             // добавляет is-checked к текущему item
+    //             item.querySelector('span').classList.add('is-checked');
+    //         });
+    //     });
+    // }
 
 
     const header = document.querySelector('.header');
@@ -118,13 +118,13 @@ window.addEventListener('DOMContentLoaded', () => {
     // });
 
     // новые попапы
-    const popupCounter = document.querySelector('.form-counter span');
-    function getRandomArbitrary(min, max) {
-        return Math.floor(Math.random() * (max - min) + min);
-    }
-    if (popupCounter) {
-        popupCounter.innerHTML = getRandomArbitrary(2, 9);
-    }
+    // const popupCounter = document.querySelector('.form-counter span');
+    // function getRandomArbitrary(min, max) {
+    //     return Math.floor(Math.random() * (max - min) + min);
+    // }
+    // if (popupCounter) {
+    //     popupCounter.innerHTML = getRandomArbitrary(2, 9);
+    // }
 
     const popupNew = document.querySelector('#popup-new');
     // setTimeout(() => {

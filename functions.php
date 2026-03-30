@@ -1,5 +1,5 @@
 <?php
-$version = '0.0.2';
+$version = '0.0.4';
 
 // правильный способ подключить стили и скрипты темы
 add_action('wp_enqueue_scripts', 'theme_add_scripts');
